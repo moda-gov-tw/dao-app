@@ -1,0 +1,1 @@
+export { ShamanPermission } from './ShamanPermission';

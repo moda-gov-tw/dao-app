@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>開拓DAO - FrontierDAOapp is a fork from DAOhaus</title>
+    <meta http-equiv="Content-Security-Policy" content="
+    upgrade-insecure-requests;
+    ">
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self'  api.thegraph.com; 
+    img-src 'self' cdn.discordapp.com explorer-api.walletconnect.com ipfs.io data:; 
+    style-src 'self' 'nonce-cm1vaw==' fonts.googleapis.com ;
+    script-src 'self' 'nonce-cm1vaw==' ;  
+    font-src 'self' fonts.gstatic.com; 
+    connect-src 'self' *.eth.rpc.rivet.cloud *.goerli.rpc.rivet.cloud *.safe.global relay.walletconnect.com wss://relay.walletconnect.com boredapeyachtclub.com relay.walletconnect.org api.thegraph.com explorer-api.walletconnect.com ipfs.io ;
+    frame-src 'self' verify.walletconnect.com;
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+    ">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script >
+      window.global = window;
+    </script>
+    <script type="module" src="/src/main.tsx" ></script>
+  </body>
+</html>
